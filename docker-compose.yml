@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  orleansdomo.web:
+    image: orleansdomo.web
+    build:
+      context: .
+      dockerfile: OrleansDomo.Web\Dockerfile
+
+  orleans.web:
+    image: orleans.web
+    build:
+      context: .\Orleans.Web
+      dockerfile: Dockerfile
+
